@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            /* flex-direction: column; */
+            height: 100vh;
+            width:100%;
+            /* gap: 100px; */
+            justify-content: center;
+            align-items: center;
+            background: url(https://getwallpapers.com/wallpaper/full/b/c/6/129262.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            padding: 20px;
+            height: 100vh;
+            width: 80%;
+            /* background-color: aliceblue; */
+            align-items: center;
+            justify-content: center;
+            
+            /* opacity: .90; */
+        }
+
+        #recordData{
+            width: 20%;
+            height: 100vh;
+            /* background-color: rgb(126, 126, 126); */
+            /* background: url(https://img.freepik.com/free-vector/music-vinyl-record-label-with-sound-notes_1017-33905.jpg?w=1060&t=st=1723368332~exp=1723368932~hmac=e57e48cbee7fd076c872e89ab66a70c659959ec3c0e8cc067498984dea3c9c03); */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;border-left: 5px solid white;
+        }
+
+        #name ,#name1{
+            color: rgb(255, 255, 255);
+            font-size: 60px;
+            font-weight: 800;
+            /* text-shadow: 0px 3px 10px rgb(126, 247, 142); */
+        }
+        #time{
+            color: rgb(255, 114, 114);
+            font-size: 80px;
+            font-weight: 800;
+            text-shadow: 0px 3px 10px rgb(254, 34, 34);
+        }
+        #buttons{
+            display: flex;
+            gap: 45px;
+            justify-content: center;
+            align-items: center;
+        }
+        #btn-1 , #btn-2 , #btn-3{
+            height: 80px;
+            width: 160px;
+            font-size: 50px;
+            border-radius: 15px;
+            background-color: rgb(254, 71, 71);
+            box-shadow: 0px 0px 5px 2px rgb(250, 115, 115);
+            border: 0;
+            color: white;
+            font-weight: 600;
+        }
+        #record{
+            height: 50px;
+            width: 120px;
+            font-size: 25px;
+            border-radius: 15px;
+            background-color: rgb(71, 80, 254);
+            box-shadow: 0px 0px 5px 2px rgb(115, 117, 250);
+            border: 0;
+            color: white;
+            font-weight: 600;
+        }
+
+        #recordData{
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            padding: 30px;
+            color: white;
+            font-size: larger;
+            font-weight: 800;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="name">Stop Watch</h1>
+        <p id="time">00  : 00 : 00 </p>
+        <div id="buttons">
+            <button id="btn-1">Start</button>
+            <button id="btn-2">Stop</button>
+            <button id="btn-3">Reset</button>
+        </div>
+        <button id="record">Record</button>
+    </div>
+    <div id="recordData">
+    <h1 id="name1">Record</h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
